@@ -1,0 +1,231 @@
+.image {
+  width: 80px;
+  height: 80px;
+}
+
+.journal-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.page {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 20% 20% 20% 40%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+                      "head head journal aside"
+                      "crying clarke pizza aside"
+                      "sick skull surprised aside"
+}
+
+div, article {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.journal-word {
+  color: #582b34;
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 20%
+  }
+.crying {
+  grid-area: crying;
+}
+.clarke {
+  grid-area: clarke;
+}
+.pizza {
+  grid-area: pizza;
+}
+.sick {
+  grid-area: sick
+}
+.skull {
+  grid-area: skull
+}
+.surprsied {
+  grid-area: surprised;
+}
+.crying, .skull, .pizza {
+  background-color: #00cec9;
+  flex-direction: column;
+} 
+
+.clarke, .sick, .surprised {
+  background-color: #81ecec;
+  flex-direction: column;
+}
+
+header {
+  background-color: #582b34;
+  color: #FFFFFF;
+  display: block;
+  font-family: 'Nunito', sans-serif;
+  grid-area: head;
+  justify-content: center;
+  padding: 10% 5%;
+}
+
+i {
+  height: 50px;
+  color: #FFFFFF;
+}
+
+.three-dots-div {
+  display: flex;
+  justify-content: flex-end;
+  height: 20px;
+  width: 20px;
+  text-align: right;
+  display: block;
+}
+
+.journal {
+  background-color: #81ecec;
+  display: flex;
+  flex-direction: column;
+  grid-area: journal;
+}
+
+
+.arrow-container {
+  background-image: url(images/good-things.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: aside;
+  display: flex;
+  /*justify-content: flex-end;*/
+}
+
+
+.fa-phone {
+    margin-right: 10px;
+}
+
+.fa-terminal {
+    margin-right: 10px;
+}
+
+.div-arrows {
+  display: flex;
+  height: 200px;
+  width: 576px;
+  justify-content: space-between;
+  margin-top: 50%;
+}
+
+.left-arrow {
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+
+}
+.right-arrow {
+  height: 30px;
+  width: 30px;
+}
+
+.quote {
+  display: inline-block;
+  font-style: italic;
+  font-size: 20px;
+}
+
+button {
+  background-color: #582b34;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  height: 40px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  width: 140px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.image {
+  margin-top: 25%;
+}
+
+
+@media only screen and (max-width: 950px) {
+  .page {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+                          "head aside journal"
+                          "crying clarke pizza"
+                          "sick skull surprised"
+  }
+  .journal-word {
+    font-size: 25px;
+    margin-bottom: 10%;
+  }
+  .journal-icon {
+  width: 120px;
+  height: 120px;
+  }
+  .word {
+    font-size: 40px;
+  }
+  image {
+  margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .page {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr;*/
+    grid-template-areas: 
+                          "aside aside"
+                          "head journal"
+                          "clarke crying"
+                          "skull sick"
+                          "surprised pizza"
+  }
+  .journal-word {
+    font-size: 18px;
+  }
+  .journal-icon {
+    width: 80px;
+    height: 80px;
+  }
+  .word {
+    font-size: 24px;
+  }
+  .image {
+    height: 60px;
+    width: 60px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  button {
+    height: 30px;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 110px;
+  }
+  .quote {
+    font-size: 15px;
+  }
+  .image {
+    margin: 15% auto;
+    height: 85px;
+    width: 85px;
+  } 
+}
+
+
